@@ -43,6 +43,11 @@ int main()
             if (std::any_of(text.begin(), text.end(), ::isdigit))
             {
                 rectangles.push_back(boundingRect);
+
+                // Отображение прямоугольника в отдельном окне
+                // cv::Mat rectImage = src(boundingRect);
+                // cv::imshow("Rectangle", rectImage);
+                // cv::waitKey(0);
             }
         }
     }
